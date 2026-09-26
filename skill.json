@@ -1,0 +1,37 @@
+{
+  "name": "genpark-semantic-chunk-hierarchy-re-ranker-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Hierarchical semantic chunk re-ranker evaluating hybrid keyword and dense relevance scores for agentic RAG retrieval.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "agent-memory",
+  "tags": [
+    "reranker",
+    "agentic-rag",
+    "chunk-hierarchy",
+    "semantic-search",
+    "hybrid-search"
+  ],
+  "inputs": {
+    "query": {
+      "type": "string",
+      "default": "Credit burn rate warnings in Metronome"
+    }
+  },
+  "outputs": {
+    "rerank_id": {
+      "type": "string"
+    },
+    "chunks_selected_count": {
+      "type": "integer"
+    },
+    "total_context_tokens_used": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
